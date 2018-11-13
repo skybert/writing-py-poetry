@@ -21,20 +21,35 @@ xmltodict = "^0.11.0"
 # Must pin autopep8 at version 1.4.1 depends on a version pycodestyle
 # which breaks flake8 and pep8-naming as they depend on incompatible
 # versions of that library.
-autopep8 = "==1.4"
-flake8 = "^3.6.0"
-trepan3k = "^0.8.8"
+autopep8 = "==1.4.1"
+flake8 = "^3.6"
 autoflake = "^1.2"
-deepdiff = "^3.3.0"
+deepdiff = "^3.3"
 docformatter = "^1.0"
-green = "^2.13.0"
 jedi = "^0.13.1"
 pep8-naming = "^0.7.0"
-pylint = "^2.1.1"
-pytest = "^3.10.1"
+pylint = "^2.1"
+pytest = "^3.10"
 rope = "^0.11.0"
-xmldiff ="^2.2"
+xmldiff = "^2.2"
 yapf = "^0.24.0"
+
+# trepan3k = "^0.8.8"
+# →
+# [EnvCommandError] Command
+# ['/home/torstein/.cache/pypoetry/virtualenvs/captain-py3.5/bin/
+# pip', 'install', '--no-deps', 'pyficache==1.0.1'] errored with the
+# foll owing output: Collecting pyficache==1.0.1 Could not find a
+# version that satisfies the requirement pyficache==1.  0.1 (from
+# versions: 0.1.0, 0.1.4, 0.2.0, 0.2.1, 0.2.2, 0.2.3, 0.2.4, 0.  2.5,
+# 0.2.6, 0.3.0, 0.3.1, 0.3.2, 1.0.0) No matching distribution found
+# for pyficache==1.0.1
+
+# green = "^2.13.0"
+# →
+# [RecursionError]
+# maximum recursion depth exceeded while calling a Python object
+
 
 [build-system]
 requires = ["poetry>=0.12"]
